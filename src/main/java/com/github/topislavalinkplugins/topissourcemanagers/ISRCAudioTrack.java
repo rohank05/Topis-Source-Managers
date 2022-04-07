@@ -46,7 +46,7 @@ public class ISRCAudioTrack extends DelegatedAudioTrack{
 			identifier,
 			false,
 			"https://open.spotify.com/track/" + identifier
-		), isrc, images.length == 0 ? null : images[0].getUrl(), spotifySourceManager);
+		), isrc, images[0].getUrl(), spotifySourceManager);
 	}
 
 	public static ISRCAudioTrack ofSpotify(TrackSimplified track, Album album, SpotifySourceManager spotifySourceManager){
