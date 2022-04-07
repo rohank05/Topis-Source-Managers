@@ -20,24 +20,27 @@ public class SpotifyConfig{
 		return this.clientId;
 	}
 
-	public void setClientId(String clientId){
+	public SpotifyConfig setClientId(String clientId){
 		this.clientId = clientId;
+		return this;
 	}
 
 	public String getClientSecret(){
 		return this.clientSecret;
 	}
 
-	public void setClientSecret(String clientSecret){
+	public SpotifyConfig setClientSecret(String clientSecret){
 		this.clientSecret = clientSecret;
+		return this;
 	}
 
 	public CountryCode getCountryCode(){
 		return this.countryCode;
 	}
 
-	public void setCountryCode(String countryCode){
+	public SpotifyConfig setCountryCode(String countryCode){
 		this.countryCode = CountryCode.getByCode(countryCode);
+		return this;
 	}
 
 }

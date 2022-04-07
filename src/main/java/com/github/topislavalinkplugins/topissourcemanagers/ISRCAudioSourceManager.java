@@ -16,8 +16,8 @@ public abstract class ISRCAudioSourceManager implements AudioSourceManager{
 	public static final String QUERY_PATTERN = "%QUERY%";
 	protected final AudioPlayerManager audioPlayerManager;
 	protected String[] providers = {
-		"ytsearch:\"" + ISRC_PATTERN + "\"",
-		"ytsearch:" + QUERY_PATTERN
+		"ytmsearch:\"" + ISRC_PATTERN + "\"",
+		"ytmsearch:" + QUERY_PATTERN
 	};
 
 	protected ISRCAudioSourceManager(String[] providers, AudioPlayerManager audioPlayerManager){
